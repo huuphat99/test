@@ -32,4 +32,9 @@ public class UserController {
         return userService.findById(id);
     }
 
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public String test(){
+        return "test";
+    }
+
 }
